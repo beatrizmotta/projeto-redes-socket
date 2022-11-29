@@ -33,7 +33,8 @@ def receive():
 
             translated_msg = translator.translate(msg, src=language, dest=language_choosen).text
             print(translated_msg)
-        except:
+        except Exception as e:
+            #print(e)
             print(room_closed_warning)
             client.close()
             break

@@ -51,7 +51,8 @@ def handle_client(client, address_code):
             alias = clients[address_code]['nick']
             clients[address_code]['connection'].close()
             del clients[address_code]
-            transmitir(f"{alias} saiu do chat", address_code)
+            for client1 in clients:
+                clients[client1]['connection'].send(f"lang=pt\\msg={alias} saiu da sala".encode())
             break
         
 
