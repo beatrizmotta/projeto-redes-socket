@@ -42,7 +42,7 @@ def receive():
             msg = data.split("\\")[1].split("=")[1]
 
             translated_msg = translator.translate(msg, src=language, dest=language_choosen).text
-            print ("\033[A                             \033[A")
+            # print ("\033[A                             \033[A")
             print(translated_msg)
 
         except Exception as e:
