@@ -47,7 +47,7 @@ is_server_up = True
 def receive():
     while True:
         try:
-            # Recebe e decodifica os dados transmitidos pelo servidor com no máximo 1024 bits.
+            # Recebe e decodifica os dados transmitidos pelo servidor com no máximo 1024 bytes.
             data = client.recv(1024).decode()
             # Tratamento dos dados.
             language = data.split("\\")[0].split("=")[1]
