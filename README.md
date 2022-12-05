@@ -1,7 +1,9 @@
 COMO EXECUTAR:
 
 O programa requer Python 3+ e googletrans 4.0.0rc1.
+
 https://www.python.org/downloads/
+
 https://pypi.org/project/googletrans/4.0.0rc1/
 
 1. Executar o arquivo server.py;
