@@ -1,4 +1,4 @@
-# Comando de execução do programa pelo terminal: py remake_client.py
+# Comando de execução do programa pelo terminal: py client.py
 
 import socket # Biblioteca padrão.
 import threading # Biblioteca padrão.

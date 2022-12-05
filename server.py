@@ -1,4 +1,4 @@
-# Comando de execução do programa pelo terminal: py remake_server.py
+# Comando de execução do programa pelo terminal: py server.py
 
 import socket # Biblioteca padrão.
 import logging # Biblioteca padrão.
