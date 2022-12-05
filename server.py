@@ -74,7 +74,6 @@ while True:
     client, address = server.accept()
     logging.info(f'{address} was connected')
 
-    print(type(address))
     address = "".join([str(i) for i in list(address)])
 
     # Adiciona o novo cliente ao dict() com seu respectivo endereço IP.
