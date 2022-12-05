@@ -41,7 +41,7 @@ def transmitir(msg, address_code):
         if (clients[client]['nick'] != nickname_transmissor):
             clients[client]['connection'].send(f'lang={language}\\msg={decoded_msg}'.encode())
 
-# Função de recepção dos dados com no máximo 1024 bits.
+# Função de recepção dos dados com no máximo 1024 bytes.
 def handle_client(client, address_code):
     while True:
         try:
